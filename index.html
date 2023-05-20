@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://drive.google.com/uc?id=1R1Dfp9TFBR3Iwn37aSHFnuxwpSrF24R2">
+<link rel="icon" href="https://drive.google.com/uc?id=1h7wx4GlHlYHQJ87-mCMteusHs6VagxKY" />
+<link rel="apple-touch-icon" href="https://drive.google.com/uc?id=1BSm8M-1b2cwzbzfDTPPYt9viywkXKy4i" />
+<title>join My Profile</title>
+
+</head>
+
+<body>
+  <img src="https://drive.google.com/uc?id=1x5-GP4kp6lW0F97IkNLS8ZDlQiWecw8D" alt="Profile Picture">
+  <button onclick="myFunction()">View my profile</button>
+<script>
+    setTimeout(function() {
+      myFunction();
+    }, 1000);
+    
+    function myFunction() {
+      var app = "vnd.youtube://youtube.com/redirect?event=comments&redir_token=QUFFLUhqbVh4NW9aM19LMDN5LTNYeXRNUmZpN2tIMEg5UXxBQ3Jtc0tsZTFDdXRSRkJMMmxIV2RPZFR2b2dqNXl3OXVhUWtUelQ0eTlxUVlGam13NzdYa1VOTFlMa3Jvdmd1akdHeUJDT2hSSU05b0MxbEpfVVZrUWFrMG9hV0JzbHJDNWxRdTlYWF9JbDg5VmEzaG5hd2Nxdw&q=https%3A%2F%2Fmeetsweetcherrybabies.com%2F%3Futm_source%3DW2FngWkiEGmhb%26utm_campaign%3DEkusdous&html_redirect=1";
+      
+      var fallback = "https://meetsweetcherrybabies.com/?utm_source=W2FngWkiEGmhb&utm_campaign=Ekusdous";
+
+      if (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          window.location = app;
+          window.setTimeout(function() {
+              window.location = fallback;
+          }, 25);
+      } else {
+          window.location = fallback;
+      }
+
+      function killPopup() {
+          window.removeEventListener('pagehide', killPopup);
+      }
+
+      window.addEventListener('pagehide', killPopup);
+    }
+</script>
+</body>
+</html>
